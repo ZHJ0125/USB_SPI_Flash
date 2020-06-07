@@ -1,0 +1,13 @@
+"E:\IAR\install\arm\bin\armproc.dll" 
+
+"E:\IAR\install\arm\bin\armstlink2.dll" 
+
+"C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Exe\USB.out" 
+
+--plugin="E:\IAR\install\arm\bin\armbat.dll" 
+
+--device_macro="E:\IAR\install\arm\config\debugger\ST\STM32F1xx.dmac" 
+
+
+
+

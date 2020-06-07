@@ -1,0 +1,669 @@
+###############################################################################
+#
+# IAR ELF Linker V8.30.1.114/W32 for ARM                  07/Jun/2020  15:00:38
+# Copyright 2007-2018 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Exe\USB.out
+#    Map file     =  
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\List\USB.map
+#    Command line =  
+#        -f C:\Users\ZHJ\AppData\Local\Temp\EW4974.tmp
+#        (C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\bsp_led.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\bsp_spi_flash.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\bsp_usart.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\core_cm3.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\fsmc_nand.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\hw_config.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\main.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\mass_mal.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\memory.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\misc.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\nand_if.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\otgd_fs_cal.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\otgd_fs_dev.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\otgd_fs_int.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\otgd_fs_pcd.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\scsi_data.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\startup_stm32f10x_hd.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\stm32f10x_dma.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\stm32f10x_exti.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\stm32f10x_gpio.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\stm32f10x_it.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\stm32f10x_rcc.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\stm32f10x_spi.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\stm32f10x_usart.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\system_stm32f10x.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\usb_bot.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\usb_core.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\usb_desc.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\usb_endp.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\usb_init.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\usb_int.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\usb_istr.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\usb_mem.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\usb_prop.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\usb_pwr.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\usb_regs.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\usb_scsi.o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj\usb_sil.o
+#        --no_out_extension -o
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Exe\USB.out --map
+#        C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\List\USB.map
+#        --config E:\IAR\install\arm\config\linker\ST\stm32f103x8.icf
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x800'ffff] { ro };
+define block CSTACK with size = 2K, alignment = 8 { };
+define block HEAP with size = 2K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'4fff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                       0x130
+  .intvec            ro code   0x800'0000   0x130  startup_stm32f10x_hd.o [1]
+                             - 0x800'0130   0x130
+
+"P1":                                      0x2ff3
+  .text              ro code   0x800'0130   0xa82  usb_core.o [1]
+  .text              ro code   0x800'0bb2    0x7a  lz77_init_single.o [3]
+  .text              ro code   0x800'0c2c   0x27a  usb_regs.o [1]
+  .text              ro code   0x800'0ea6    0x3a  zero_init3.o [3]
+  .text              ro code   0x800'0ee0    0x54  usb_mem.o [1]
+  .text              ro code   0x800'0f34   0x454  bsp_spi_flash.o [1]
+  .text              ro code   0x800'1388   0x10c  stm32f10x_rcc.o [1]
+  .text              ro code   0x800'1494    0xcc  stm32f10x_gpio.o [1]
+  .text              ro code   0x800'1560    0x74  stm32f10x_spi.o [1]
+  .text              ro code   0x800'15d4    0x28  printf.o [2]
+  .text              ro code   0x800'15fc   0x13e  xprintftiny.o [2]
+  .text              ro code   0x800'173c    0x36  strlen.o [3]
+  .text              ro code   0x800'1774   0x3f8  usb_scsi.o [1]
+  .text              ro code   0x800'1b6c   0x3bc  usb_bot.o [1]
+  .text              ro code   0x800'1f28    0xc0  mass_mal.o [1]
+  .text              ro code   0x800'1fe8   0x20c  memory.o [1]
+  .text              ro code   0x800'21f4    0x82  usb_sil.o [1]
+  .text              ro code   0x800'2278   0x270  usb_prop.o [1]
+  .text              ro code   0x800'24e8    0xfc  hw_config.o [1]
+  .text              ro code   0x800'25e4    0x3c  usb_pwr.o [1]
+  .text              ro code   0x800'2620    0x80  misc.o [1]
+  .text              ro code   0x800'26a0   0x250  usb_int.o [1]
+  .text              ro code   0x800'28f0   0x110  system_stm32f10x.o [1]
+  .text              ro code   0x800'2a00   0x102  stm32f10x_usart.o [1]
+  .text              ro code   0x800'2b04    0xb0  bsp_usart.o [1]
+  .text              ro code   0x800'2bb4    0x60  main.o [1]
+  .text              ro code   0x800'2c14    0x50  bsp_led.o [1]
+  .text              ro code   0x800'2c64    0x3c  usb_init.o [1]
+  .text              ro code   0x800'2ca0    0x44  usb_istr.o [1]
+  .rodata            const     0x800'2ce4    0x34  bsp_spi_flash.o [1]
+  .rodata            const     0x800'2d18    0x30  bsp_spi_flash.o [1]
+  .rodata            const     0x800'2d48    0x30  main.o [1]
+  .rodata            const     0x800'2d78    0x28  usb_desc.o [1]
+  .rodata            const     0x800'2da0    0x28  usb_desc.o [1]
+  .text              ro code   0x800'2dc8    0x28  data_init.o [3]
+  .text              ro code   0x800'2df0    0x22  stm32f10x_it.o [1]
+  .iar.init_table    const     0x800'2e14    0x20  - Linker created -
+  .rodata            const     0x800'2e34    0x20  usb_desc.o [1]
+  .text              ro code   0x800'2e54    0x1e  cmain.o [3]
+  .text              ro code   0x800'2e72     0x4  low_level_init.o [2]
+  .text              ro code   0x800'2e76     0x4  exit.o [2]
+  .text              ro code   0x800'2e7c     0xa  cexit.o [3]
+  .text              ro code   0x800'2e88    0x14  exit.o [4]
+  .text              ro code   0x800'2e9c    0x16  xprout.o [2]
+  .text              ro code   0x800'2eb4     0xc  putchar.o [2]
+  .rodata            const     0x800'2ec0    0x14  usb_desc.o [1]
+  .rodata            const     0x800'2ed4    0x10  usb_desc.o [1]
+  .text              ro code   0x800'2ee4    0x10  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2ef4    0x10  usb_endp.o [1]
+  .text              ro code   0x800'2f04     0xc  cstartup_M.o [3]
+  .rodata            const     0x800'2f10     0x4  usb_desc.o [1]
+  .text              ro code   0x800'2f14     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f18     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f1c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f20     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f24     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f28     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f2c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f30     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f34     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f38     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f3c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f40     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f44     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f48     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f4c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f50     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f54     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f58     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f5c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f60     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f64     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f68     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f6c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f70     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f74     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f78     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f7c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f80     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f84     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f88     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f8c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f90     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f94     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f98     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2f9c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2fa0     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2fa4     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2fa8     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2fac     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2fb0     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2fb4     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2fb8     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2fbc     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2fc0     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2fc4     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2fc8     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2fcc     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2fd0     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2fd4     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2fd8     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2fdc     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2fe0     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2fe4     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2fe8     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2fec     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2ff0     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2ff4     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2ff8     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'2ffc     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'3000     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'3004     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'3008     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'300c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'3010     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'3014     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'3018     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'301c     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'3020     0x4  startup_stm32f10x_hd.o [1]
+  .text              ro code   0x800'3024     0x4  startup_stm32f10x_hd.o [1]
+  .rodata            const     0x800'3028     0x0  zero_init3.o [3]
+  .rodata            const     0x800'3028     0x0  lz77_init_single.o [3]
+  Initializer bytes  const     0x800'3028    0xfb  <for P2-1>
+                             - 0x800'3123  0x2ff3
+
+"P2", part 1 of 3:                          0x1b6
+  P2-1                        0x2000'0000   0x1b6  <Init block>
+    .data            inited   0x2000'0000     0x4  bsp_spi_flash.o [1]
+    .data            inited   0x2000'0004    0x24  scsi_data.o [1]
+    .data            inited   0x2000'0028    0x24  scsi_data.o [1]
+    .data            inited   0x2000'004c     0x4  scsi_data.o [1]
+    .data            inited   0x2000'0050     0x8  scsi_data.o [1]
+    .data            inited   0x2000'0058    0x14  scsi_data.o [1]
+    .data            inited   0x2000'006c     0xc  scsi_data.o [1]
+    .data            inited   0x2000'0078    0x10  stm32f10x_rcc.o [1]
+    .data            inited   0x2000'0088     0x4  stm32f10x_rcc.o [1]
+    .data            inited   0x2000'008c    0x1c  usb_desc.o [1]
+    .data            inited   0x2000'00a8    0x1c  usb_istr.o [1]
+    .data            inited   0x2000'00c4    0x1c  usb_istr.o [1]
+    .data            inited   0x2000'00e0    0x30  usb_prop.o [1]
+    .data            inited   0x2000'0110    0x24  usb_prop.o [1]
+    .data            inited   0x2000'0134     0x8  usb_prop.o [1]
+    .data            inited   0x2000'013c     0x8  usb_prop.o [1]
+    .data            inited   0x2000'0144    0x28  usb_prop.o [1]
+    .data            inited   0x2000'016c    0x48  xfiles.o [2]
+    .data            inited   0x2000'01b4     0x2  usb_prop.o [1]
+                            - 0x2000'01b6   0x1b6
+
+"P2", part 2 of 3:                         0x1958
+  .bss               zero     0x2000'01b8  0x1000  bsp_spi_flash.o [1]
+  .bss               zero     0x2000'11b8   0x800  memory.o [1]
+  .bss               zero     0x2000'19b8    0x50  xfiles.o [2]
+  .bss               zero     0x2000'1a08    0x40  usb_bot.o [1]
+  .bss               zero     0x2000'1a48    0x20  usb_bot.o [1]
+  .bss               zero     0x2000'1a68    0x1c  usb_init.o [1]
+  .bss               zero     0x2000'1a84    0x10  usb_bot.o [1]
+  .bss               zero     0x2000'1a94     0x8  mass_mal.o [1]
+  .bss               zero     0x2000'1a9c     0x8  mass_mal.o [1]
+  .bss               zero     0x2000'1aa4     0x8  mass_mal.o [1]
+  .bss               zero     0x2000'1aac     0x8  scsi_data.o [1]
+  .bss               zero     0x2000'1ab4     0x8  scsi_data.o [1]
+  .bss               zero     0x2000'1abc     0x4  mass_mal.o [1]
+  .bss               zero     0x2000'1ac0     0x4  mass_mal.o [1]
+  .bss               zero     0x2000'1ac4     0x4  memory.o [1]
+  .bss               zero     0x2000'1ac8     0x4  memory.o [1]
+  .bss               zero     0x2000'1acc     0x4  memory.o [1]
+  .bss               zero     0x2000'1ad0     0x4  memory.o [1]
+  .bss               zero     0x2000'1ad4     0x4  memory.o [1]
+  .bss               zero     0x2000'1ad8     0x4  memory.o [1]
+  .bss               zero     0x2000'1adc     0x4  memory.o [1]
+  .bss               zero     0x2000'1ae0     0x4  memory.o [1]
+  .bss               zero     0x2000'1ae4     0x4  usb_bot.o [1]
+  .bss               zero     0x2000'1ae8     0x4  usb_bot.o [1]
+  .bss               zero     0x2000'1aec     0x4  usb_init.o [1]
+  .bss               zero     0x2000'1af0     0x4  usb_init.o [1]
+  .bss               zero     0x2000'1af4     0x4  usb_init.o [1]
+  .bss               zero     0x2000'1af8     0x4  usb_prop.o [1]
+  .bss               zero     0x2000'1afc     0x4  usb_pwr.o [1]
+  .bss               zero     0x2000'1b00     0x2  usb_bot.o [1]
+  .bss               zero     0x2000'1b02     0x2  usb_core.o [1]
+  .bss               zero     0x2000'1b04     0x2  usb_init.o [1]
+  .bss               zero     0x2000'1b06     0x2  usb_int.o [1]
+  .bss               zero     0x2000'1b08     0x2  usb_int.o [1]
+  .bss               zero     0x2000'1b0a     0x2  usb_istr.o [1]
+  .bss               zero     0x2000'1b0c     0x1  memory.o [1]
+  .bss               zero     0x2000'1b0d     0x1  usb_bot.o [1]
+  .bss               zero     0x2000'1b0e     0x1  usb_core.o [1]
+  .bss               zero     0x2000'1b0f     0x1  usb_init.o [1]
+                            - 0x2000'1b10  0x1958
+
+"P2", part 3 of 3:                          0x800
+  CSTACK                      0x2000'1b10   0x800  <Block>
+    CSTACK           uninit   0x2000'1b10   0x800  <Block tail>
+                            - 0x2000'2310   0x800
+
+Unused ranges:
+
+         From           To    Size
+         ----           --    ----
+   0x800'3123   0x800'ffff  0xcedd
+  0x2000'01b6  0x2000'01b7     0x2
+  0x2000'2310  0x2000'4fff  0x2cf0
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x1958:
+          0x2000'01b8  0x1958
+
+Copy/lz77 (__iar_lz77_init_single3)
+    1 source range, total size 0xfb (57% of destination):
+           0x800'3028    0xfb
+    1 destination range, total size 0x1b6:
+          0x2000'0000   0x1b6
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                  ro code  ro data  rw data
+    ------                  -------  -------  -------
+command line/config:
+    -------------------------------------------------
+    Total:
+
+C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj: [1]
+    bsp_led.o                    80
+    bsp_spi_flash.o           1 108      102    4 100
+    bsp_usart.o                 176
+    hw_config.o                 252
+    main.o                       96       48
+    mass_mal.o                  192                32
+    memory.o                    524             2 081
+    misc.o                      128
+    scsi_data.o                           66      132
+    startup_stm32f10x_hd.o      596
+    stm32f10x_gpio.o            204
+    stm32f10x_it.o               34
+    stm32f10x_rcc.o             268       12       20
+    stm32f10x_spi.o             116
+    stm32f10x_usart.o           258
+    system_stm32f10x.o          272
+    usb_bot.o                   956               123
+    usb_core.o                2 690                 3
+    usb_desc.o                           168       28
+    usb_endp.o                   16
+    usb_init.o                   60                43
+    usb_int.o                   592                 4
+    usb_istr.o                   68       32       58
+    usb_mem.o                    84
+    usb_prop.o                  624       82      146
+    usb_pwr.o                    60                 4
+    usb_regs.o                  634
+    usb_scsi.o                1 016
+    usb_sil.o                   130
+    -------------------------------------------------
+    Total:                   11 234      510    6 774
+
+dl7M_tlf.a: [2]
+    exit.o                        4
+    low_level_init.o              4
+    printf.o                     40
+    putchar.o                    12
+    xfiles.o                              41      152
+    xprintftiny.o               318
+    xprout.o                     22
+    -------------------------------------------------
+    Total:                      400       41      152
+
+rt7M_tl.a: [3]
+    cexit.o                      10
+    cmain.o                      30
+    cstartup_M.o                 12
+    data_init.o                  40
+    lz77_init_single.o          122
+    strlen.o                     54
+    zero_init3.o                 58
+    -------------------------------------------------
+    Total:                      326
+
+shb_l.a: [4]
+    exit.o                       20
+    -------------------------------------------------
+    Total:                       20
+
+    Gaps                         14        2
+    Linker created                        32    2 048
+-----------------------------------------------------
+    Grand Total:             11 994      585    8 974
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address    Size  Type      Object
+-----                       -------    ----  ----      ------
+.iar.init_table$$Base    0x800'2e14           --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'2e34           --   Gb  - Linker created -
+?main                    0x800'2e55          Code  Gb  cmain.o [3]
+ADCPrescTable           0x2000'0088     0x4  Data  Lc  stm32f10x_rcc.o [1]
+APBAHBPrescTable        0x2000'0078    0x10  Data  Lc  stm32f10x_rcc.o [1]
+Block_Read_count        0x2000'1ac4     0x4  Data  Gb  memory.o [1]
+Block_offset            0x2000'1ac8     0x4  Data  Gb  memory.o [1]
+Bot_Abort                0x800'1eed    0x3c  Code  Gb  usb_bot.o [1]
+Bot_State               0x2000'1b0d     0x1  Data  Gb  usb_bot.o [1]
+Bulk_Data_Buff          0x2000'1a08    0x40  Data  Gb  usb_bot.o [1]
+BusFault_Handler         0x800'2df7     0x2  Code  Gb  stm32f10x_it.o [1]
+ByteSwap                 0x800'0e95    0x12  Code  Gb  usb_regs.o [1]
+CBW                     0x2000'1a48    0x20  Data  Gb  usb_bot.o [1]
+CBW_Decode               0x800'1c3f   0x228  Code  Gb  usb_bot.o [1]
+CSTACK$$Base            0x2000'1b10           --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'2310           --   Gb  - Linker created -
+CSW                     0x2000'1a84    0x10  Data  Gb  usb_bot.o [1]
+CTR_HP                   0x800'2855    0x7a  Code  Gb  usb_int.o [1]
+CTR_LP                   0x800'26a1   0x1b4  Code  Gb  usb_int.o [1]
+ClearDTOG_RX             0x800'0d1d    0x2e  Code  Gb  usb_regs.o [1]
+ClearDTOG_TX             0x800'0d4b    0x2e  Code  Gb  usb_regs.o [1]
+Clear_Status_Out         0x800'0cf9    0x24  Code  Gb  usb_regs.o [1]
+Config_Descriptor       0x2000'013c     0x8  Data  Gb  usb_prop.o [1]
+Counter                 0x2000'1acc     0x4  Data  Gb  memory.o [1]
+DataStageIn              0x800'05bd    0xb6  Code  Lc  usb_core.o [1]
+DataStageOut             0x800'050b    0xb2  Code  Lc  usb_core.o [1]
+Data_Buffer             0x2000'11b8   0x800  Data  Gb  memory.o [1]
+Data_Len                0x2000'1b00     0x2  Data  Gb  usb_bot.o [1]
+Data_Mul_MaxPacketSize  0x2000'1b0e     0x1  Data  Gb  usb_core.o [1]
+Data_Setup0              0x800'078b   0x240  Code  Lc  usb_core.o [1]
+DebugMon_Handler         0x800'2dfd     0x2  Code  Gb  stm32f10x_it.o [1]
+Device_Descriptor       0x2000'0134     0x8  Data  Gb  usb_prop.o [1]
+Device_Info             0x2000'1a68    0x1c  Data  Gb  usb_init.o [1]
+Device_Property         0x2000'00e0    0x30  Data  Gb  usb_prop.o [1]
+Device_Table            0x2000'01b4     0x2  Data  Gb  usb_prop.o [1]
+EP1_IN_Callback          0x800'2ef5     0x8  Code  Gb  usb_endp.o [1]
+EP2_OUT_Callback         0x800'2efd     0x8  Code  Gb  usb_endp.o [1]
+EPindex                 0x2000'1b0f     0x1  Data  Gb  usb_init.o [1]
+FLASH_SPI_disk_initialize
+                         0x800'0f35    0xd0  Code  Gb  bsp_spi_flash.o [1]
+GPIO_Init                0x800'1495    0xc0  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_ResetBits           0x800'155b     0x6  Code  Gb  stm32f10x_gpio.o [1]
+GPIO_SetBits             0x800'1555     0x6  Code  Gb  stm32f10x_gpio.o [1]
+GetEPRxAddr              0x800'0dd9    0x1c  Code  Gb  usb_regs.o [1]
+GetEPRxCount             0x800'0e5d    0x1e  Code  Gb  usb_regs.o [1]
+GetEPTxAddr              0x800'0dbd    0x1c  Code  Gb  usb_regs.o [1]
+Get_Max_Lun              0x800'24a1    0x16  Code  Gb  usb_prop.o [1]
+Get_SerialNum            0x800'254f    0x2c  Code  Gb  hw_config.o [1]
+HardFault_Handler        0x800'2df3     0x2  Code  Gb  stm32f10x_it.o [1]
+Idx                     0x2000'1ad0     0x4  Data  Gb  memory.o [1]
+In0_Process              0x800'0a4f    0x58  Code  Gb  usb_core.o [1]
+IntToUnicode             0x800'258d    0x4e  Code  Lc  hw_config.o [1]
+LED_GPIO_Config          0x800'2c15    0x50  Code  Gb  bsp_led.o [1]
+MAL_Config               0x800'25db     0xa  Code  Gb  hw_config.o [1]
+MAL_GetStatus            0x800'1f99    0x38  Code  Gb  mass_mal.o [1]
+MAL_Init                 0x800'1f29    0x38  Code  Gb  mass_mal.o [1]
+MAL_Read                 0x800'1f7d    0x1c  Code  Gb  mass_mal.o [1]
+MAL_Write                0x800'1f61    0x1c  Code  Gb  mass_mal.o [1]
+MASS_ConfigDescriptor    0x800'2e34    0x20  Data  Gb  usb_desc.o [1]
+MASS_Data_Setup          0x800'23ab    0x54  Code  Gb  usb_prop.o [1]
+MASS_DeviceDescriptor    0x800'2ec0    0x14  Data  Gb  usb_desc.o [1]
+MASS_GetConfigDescriptor
+                         0x800'2471     0xc  Code  Gb  usb_prop.o [1]
+MASS_GetDeviceDescriptor
+                         0x800'2465     0xc  Code  Gb  usb_prop.o [1]
+MASS_GetStringDescriptor
+                         0x800'247d    0x24  Code  Gb  usb_prop.o [1]
+MASS_Get_Interface_Setting
+                         0x800'244d    0x18  Code  Gb  usb_prop.o [1]
+MASS_NoData_Setup        0x800'23ff    0x4e  Code  Gb  usb_prop.o [1]
+MASS_Reset               0x800'2297    0xce  Code  Gb  usb_prop.o [1]
+MASS_Status_In           0x800'23a7     0x2  Code  Gb  usb_prop.o [1]
+MASS_Status_Out          0x800'23a9     0x2  Code  Gb  usb_prop.o [1]
+MASS_StringInterface     0x800'2ed4    0x10  Data  Gb  usb_desc.o [1]
+MASS_StringLangID        0x800'2f10     0x4  Data  Gb  usb_desc.o [1]
+MASS_StringProduct       0x800'2da0    0x28  Data  Gb  usb_desc.o [1]
+MASS_StringSerial       0x2000'008c    0x1c  Data  Gb  usb_desc.o [1]
+MASS_StringVendor        0x800'2d78    0x28  Data  Gb  usb_desc.o [1]
+MASS_init                0x800'2279    0x1e  Code  Gb  usb_prop.o [1]
+Mass_Block_Count        0x2000'1aa4     0x8  Data  Gb  mass_mal.o [1]
+Mass_Block_Size         0x2000'1a9c     0x8  Data  Gb  mass_mal.o [1]
+Mass_Memory_Size        0x2000'1a94     0x8  Data  Gb  mass_mal.o [1]
+Mass_Storage_ClearFeature
+                         0x800'238b    0x14  Code  Gb  usb_prop.o [1]
+Mass_Storage_In          0x800'1b6d    0x5c  Code  Gb  usb_bot.o [1]
+Mass_Storage_Out         0x800'1bc9    0x76  Code  Gb  usb_bot.o [1]
+Mass_Storage_SetConfiguration
+                         0x800'2365    0x26  Code  Gb  usb_prop.o [1]
+Mass_Storage_SetDeviceAddress
+                         0x800'239f     0x8  Code  Gb  usb_prop.o [1]
+Max_Lun                 0x2000'1af8     0x4  Data  Gb  usb_prop.o [1]
+MemManage_Handler        0x800'2df5     0x2  Code  Gb  stm32f10x_it.o [1]
+Mode_Sense10_data       0x2000'0050     0x8  Data  Gb  scsi_data.o [1]
+Mode_Sense6_data        0x2000'004c     0x4  Data  Gb  scsi_data.o [1]
+NMI_Handler              0x800'2df1     0x2  Code  Gb  stm32f10x_it.o [1]
+NOP_Process              0x800'0bb1     0x2  Code  Gb  usb_core.o [1]
+NVIC_Init                0x800'262b    0x60  Code  Gb  misc.o [1]
+NVIC_PriorityGroupConfig
+                         0x800'2621     0xa  Code  Gb  misc.o [1]
+NoData_Setup0            0x800'0673   0x118  Code  Lc  usb_core.o [1]
+Out0_Process             0x800'0aa7    0x42  Code  Gb  usb_core.o [1]
+PMAToUserBufferCopy      0x800'0f0f    0x22  Code  Gb  usb_mem.o [1]
+Page00_Inquiry_Data     0x2000'1aac     0x8  Data  Gb  scsi_data.o [1]
+PendSV_Handler           0x800'2dff     0x2  Code  Gb  stm32f10x_it.o [1]
+Post0_Process            0x800'0ae9    0x3a  Code  Gb  usb_core.o [1]
+PowerOn                  0x800'25e5    0x2e  Code  Gb  usb_pwr.o [1]
+RCC_APB1PeriphClockCmd   0x800'1457    0x1c  Code  Gb  stm32f10x_rcc.o [1]
+RCC_APB2PeriphClockCmd   0x800'143b    0x1c  Code  Gb  stm32f10x_rcc.o [1]
+RCC_GetClocksFreq        0x800'138f    0xac  Code  Gb  stm32f10x_rcc.o [1]
+RCC_USBCLKConfig         0x800'1389     0x6  Code  Gb  stm32f10x_rcc.o [1]
+ReadCapacity10_Data     0x2000'1ab4     0x8  Data  Gb  scsi_data.o [1]
+ReadFormatCapacity_Data
+                        0x2000'006c     0xc  Data  Gb  scsi_data.o [1]
+Read_Memory              0x800'1fe9    0xe4  Code  Gb  memory.o [1]
+Read_Memory::Length     0x2000'1ad8     0x4  Data  Lc  memory.o [1]
+Read_Memory::Offset     0x2000'1ad4     0x4  Data  Lc  memory.o [1]
+Region$$Table$$Base      0x800'2e14           --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'2e34           --   Gb  - Linker created -
+SCSI_Address_Management
+                         0x800'1abb    0x7e  Code  Gb  usb_scsi.o [1]
+SCSI_BlkLen             0x2000'1ae8     0x4  Data  Gb  usb_bot.o [1]
+SCSI_Format_Cmd          0x800'1a57    0x2a  Code  Gb  usb_scsi.o [1]
+SCSI_Inquiry_Cmd         0x800'1775    0x38  Code  Gb  usb_scsi.o [1]
+SCSI_Invalid_Cmd         0x800'1a81    0x3a  Code  Gb  usb_scsi.o [1]
+SCSI_LBA                0x2000'1ae4     0x4  Data  Gb  usb_bot.o [1]
+SCSI_ModeSense10_Cmd     0x800'18e5     0xc  Code  Gb  usb_scsi.o [1]
+SCSI_ModeSense6_Cmd      0x800'18d9     0xc  Code  Gb  usb_scsi.o [1]
+SCSI_Read10_Cmd          0x800'1921    0x74  Code  Gb  usb_scsi.o [1]
+SCSI_ReadCapacity10_Cmd
+                         0x800'183d    0x9c  Code  Gb  usb_scsi.o [1]
+SCSI_ReadFormatCapacity_Cmd
+                         0x800'17ad    0x90  Code  Gb  usb_scsi.o [1]
+SCSI_RequestSense_Cmd    0x800'18f1    0x1c  Code  Gb  usb_scsi.o [1]
+SCSI_Start_Stop_Unit_Cmd
+                         0x800'1915     0xc  Code  Gb  usb_scsi.o [1]
+SCSI_TestUnitReady_Cmd   0x800'1a25    0x32  Code  Gb  usb_scsi.o [1]
+SCSI_Verify10_Cmd        0x800'19f1    0x34  Code  Gb  usb_scsi.o [1]
+SCSI_Write10_Cmd         0x800'1995    0x5c  Code  Gb  usb_scsi.o [1]
+SPITimeout              0x2000'0000     0x4  Data  Lc  bsp_spi_flash.o [1]
+SPI_Cmd                  0x800'159f    0x1c  Code  Gb  stm32f10x_spi.o [1]
+SPI_FLASH_BufferRead     0x800'10c1    0x56  Code  Gb  bsp_spi_flash.o [1]
+SPI_FLASH_PageWrite      0x800'104d    0x74  Code  Gb  bsp_spi_flash.o [1]
+SPI_FLASH_ReadID         0x800'1117    0x46  Code  Gb  bsp_spi_flash.o [1]
+SPI_FLASH_SectorErase    0x800'1005    0x48  Code  Gb  bsp_spi_flash.o [1]
+SPI_FLASH_SendByte       0x800'115d    0x66  Code  Gb  bsp_spi_flash.o [1]
+SPI_FLASH_WaitForWriteEnd
+                         0x800'11df    0x2a  Code  Gb  bsp_spi_flash.o [1]
+SPI_FLASH_WriteEnable    0x800'11c3    0x1c  Code  Gb  bsp_spi_flash.o [1]
+SPI_I2S_GetFlagStatus    0x800'15c3    0x12  Code  Gb  stm32f10x_spi.o [1]
+SPI_I2S_ReceiveData      0x800'15bf     0x4  Code  Gb  stm32f10x_spi.o [1]
+SPI_I2S_SendData         0x800'15bb     0x4  Code  Gb  stm32f10x_spi.o [1]
+SPI_Init                 0x800'1561    0x3e  Code  Gb  stm32f10x_spi.o [1]
+SPI_TIMEOUT_UserCallback
+                         0x800'1209    0x10  Code  Lc  bsp_spi_flash.o [1]
+SVC_Handler              0x800'2dfb     0x2  Code  Gb  stm32f10x_it.o [1]
+SaveRState              0x2000'1b06     0x2  Data  Gb  usb_int.o [1]
+SaveTState              0x2000'1b08     0x2  Data  Gb  usb_int.o [1]
+Scsi_Sense_Data         0x2000'0058    0x14  Data  Gb  scsi_data.o [1]
+SetBTABLE                0x800'0c2d     0xe  Code  Gb  usb_regs.o [1]
+SetDeviceAddress         0x800'0b23    0x44  Code  Gb  usb_core.o [1]
+SetEPRxAddr              0x800'0d9b    0x22  Code  Gb  usb_regs.o [1]
+SetEPRxCount             0x800'0e11    0x4c  Code  Gb  usb_regs.o [1]
+SetEPRxStatus            0x800'0c95    0x38  Code  Gb  usb_regs.o [1]
+SetEPRxValid             0x800'0ccd    0x2c  Code  Gb  usb_regs.o [1]
+SetEPTxAddr              0x800'0d79    0x22  Code  Gb  usb_regs.o [1]
+SetEPTxCount             0x800'0df5    0x1c  Code  Gb  usb_regs.o [1]
+SetEPTxStatus            0x800'0c5d    0x38  Code  Gb  usb_regs.o [1]
+SetEPType                0x800'0c3b    0x22  Code  Gb  usb_regs.o [1]
+SetSysClock              0x800'292d     0x8  Code  Lc  system_stm32f10x.o [1]
+SetSysClockTo72          0x800'2935    0xb0  Code  Lc  system_stm32f10x.o [1]
+Set_CSW                  0x800'1e95    0x2e  Code  Gb  usb_bot.o [1]
+Set_Scsi_Sense_Data      0x800'190d     0x8  Code  Gb  usb_scsi.o [1]
+Set_System               0x800'24e9     0x8  Code  Gb  hw_config.o [1]
+Set_USBClock             0x800'24f1    0x14  Code  Gb  hw_config.o [1]
+Setup0_Process           0x800'09cb    0x84  Code  Gb  usb_core.o [1]
+Standard_ClearFeature    0x800'02f7   0x12e  Code  Gb  usb_core.o [1]
+Standard_GetConfiguration
+                         0x800'0131    0x2a  Code  Gb  usb_core.o [1]
+Standard_GetDescriptorData
+                         0x800'04eb    0x20  Code  Gb  usb_core.o [1]
+Standard_GetInterface    0x800'0199    0x2a  Code  Gb  usb_core.o [1]
+Standard_GetStatus       0x800'0227    0xd0  Code  Gb  usb_core.o [1]
+Standard_Inquiry_Data   0x2000'0004    0x24  Data  Gb  scsi_data.o [1]
+Standard_Inquiry_Data2  0x2000'0028    0x24  Data  Gb  scsi_data.o [1]
+Standard_SetConfiguration
+                         0x800'015b    0x3e  Code  Gb  usb_core.o [1]
+Standard_SetDeviceFeature
+                         0x800'04cb    0x20  Code  Gb  usb_core.o [1]
+Standard_SetEndPointFeature
+                         0x800'0425    0xa6  Code  Gb  usb_core.o [1]
+Standard_SetInterface    0x800'01c3    0x64  Code  Gb  usb_core.o [1]
+Status                  0x2000'1abc     0x4  Data  Gb  mass_mal.o [1]
+StatusInfo              0x2000'1b02     0x2  Data  Gb  usb_core.o [1]
+String_Descriptor       0x2000'0144    0x28  Data  Gb  usb_prop.o [1]
+SysTick_Handler          0x800'2e01     0x2  Code  Gb  stm32f10x_it.o [1]
+SystemInit               0x800'28f1    0x3c  Code  Gb  system_stm32f10x.o [1]
+TransferState           0x2000'1b0c     0x1  Data  Gb  memory.o [1]
+Transfer_Data_Request    0x800'1e67    0x2e  Code  Gb  usb_bot.o [1]
+USART_Cmd                0x800'2ac5    0x1c  Code  Gb  stm32f10x_usart.o [1]
+USART_Config             0x800'2b05    0x84  Code  Gb  bsp_usart.o [1]
+USART_GetFlagStatus      0x800'2ae9    0x1a  Code  Gb  stm32f10x_usart.o [1]
+USART_Init               0x800'2a01    0xbc  Code  Gb  stm32f10x_usart.o [1]
+USART_SendData           0x800'2ae1     0x8  Code  Gb  stm32f10x_usart.o [1]
+USB_Cable_Config         0x800'254d     0x2  Code  Gb  hw_config.o [1]
+USB_Delay                0x800'2bb5    0x14  Code  Lc  main.o [1]
+USB_HP_CAN1_TX_IRQHandler
+                         0x800'2e0b     0x8  Code  Gb  stm32f10x_it.o [1]
+USB_Init                 0x800'2c65    0x3c  Code  Gb  usb_init.o [1]
+USB_Interrupts_Config    0x800'2505    0x48  Code  Gb  hw_config.o [1]
+USB_Istr                 0x800'2ca1    0x44  Code  Gb  usb_istr.o [1]
+USB_LP_CAN1_RX0_IRQHandler
+                         0x800'2e03     0x8  Code  Gb  stm32f10x_it.o [1]
+USB_SIL_Init             0x800'21f5    0x18  Code  Gb  usb_sil.o [1]
+USB_SIL_Read             0x800'2249    0x2e  Code  Gb  usb_sil.o [1]
+USB_SIL_Write            0x800'2219    0x30  Code  Gb  usb_sil.o [1]
+UsageFault_Handler       0x800'2df9     0x2  Code  Gb  stm32f10x_it.o [1]
+UserToPMABufferCopy      0x800'0ee1    0x2e  Code  Gb  usb_mem.o [1]
+User_Standard_Requests  0x2000'0110    0x24  Data  Gb  usb_prop.o [1]
+W25QXX_BUFFER           0x2000'01b8  0x1000  Data  Gb  bsp_spi_flash.o [1]
+W25QXX_Write             0x800'1275    0xf6  Code  Gb  bsp_spi_flash.o [1]
+W25QXX_Write_NoCheck     0x800'1219    0x5c  Code  Gb  bsp_spi_flash.o [1]
+Write_Memory             0x800'20cd    0xea  Code  Gb  memory.o [1]
+Write_Memory::W_Length  0x2000'1ae0     0x4  Data  Lc  memory.o [1]
+Write_Memory::W_Offset  0x2000'1adc     0x4  Data  Lc  memory.o [1]
+_PrintfTiny              0x800'1615   0x126  Code  Gb  xprintftiny.o [2]
+_Prout                   0x800'2e9d    0x16  Code  Gb  xprout.o [2]
+__cmain                  0x800'2e55          Code  Gb  cmain.o [3]
+__exit                   0x800'2e89    0x14  Code  Gb  exit.o [4]
+__iar_Stdout            0x2000'016c    0x48  Data  Gb  xfiles.o [2]
+__iar_data_init3         0x800'2dc9    0x28  Code  Gb  data_init.o [3]
+__iar_lz77_init_single3
+                         0x800'0bb3    0x7a  Code  Gb  lz77_init_single.o [3]
+__iar_program_start      0x800'2f05          Code  Gb  cstartup_M.o [3]
+__iar_zero_init3         0x800'0ea7    0x3a  Code  Gb  zero_init3.o [3]
+__low_level_init         0x800'2e73     0x4  Code  Gb  low_level_init.o [2]
+__vector_table           0x800'0000          Data  Gb  startup_stm32f10x_hd.o [1]
+_call_main               0x800'2e61          Code  Gb  cmain.o [3]
+_exit                    0x800'2e7d          Code  Gb  cexit.o [3]
+_main                    0x800'2e6f          Code  Gb  cmain.o [3]
+bDeviceState            0x2000'1afc     0x4  Data  Gb  usb_pwr.o [1]
+exit                     0x800'2e77     0x4  Code  Gb  exit.o [2]
+fputc                    0x800'2b89    0x22  Code  Gb  bsp_usart.o [1]
+main                     0x800'2bc9    0x3a  Code  Gb  main.o [1]
+obuf                    0x2000'19b8    0x50  Data  Lc  xfiles.o [2]
+out                      0x800'15fd    0x18  Code  Lc  xprintftiny.o [2]
+pEpInt_IN               0x2000'00a8    0x1c  Data  Gb  usb_istr.o [1]
+pEpInt_OUT              0x2000'00c4    0x1c  Data  Gb  usb_istr.o [1]
+pInformation            0x2000'1aec     0x4  Data  Gb  usb_init.o [1]
+pProperty               0x2000'1af0     0x4  Data  Gb  usb_init.o [1]
+pUser_Standard_Requests
+                        0x2000'1af4     0x4  Data  Gb  usb_init.o [1]
+printf                   0x800'15d5    0x28  Code  Gb  printf.o [2]
+putchar                  0x800'2eb5     0xc  Code  Gb  putchar.o [2]
+strlen                   0x800'173d          Code  Gb  strlen.o [3]
+test                    0x2000'1ac0     0x4  Data  Gb  mass_mal.o [1]
+wInterrupt_Mask         0x2000'1b04     0x2  Data  Gb  usb_init.o [1]
+wIstr                   0x2000'1b0a     0x2  Data  Gb  usb_istr.o [1]
+
+
+[1] = C:\Users\ZHJ\Desktop\New\Code\usb-C8T6\Project\Debug\Obj
+[2] = dl7M_tlf.a
+[3] = rt7M_tl.a
+[4] = shb_l.a
+
+  11 994 bytes of readonly  code memory
+     585 bytes of readonly  data memory
+   8 974 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
